@@ -14,6 +14,7 @@ import AvenirMediumWoff2 from "../assets/fonts/Avenir-Medium.woff2";
 
 export default createGlobalStyle`
 
+    /* This Font didn't look as similar to the model, it seemed to be stronger */
     /* @font-face {
         font-family: 'Avenir';
         src: url(${AvenirBlackEot});
@@ -24,6 +25,19 @@ export default createGlobalStyle`
         font-style: normal;
     }
     */
+
+   /* 
+        So I went to https://jumpstartfillings.com/services and saw a similar component, with a more similar font,
+        then I inspected the source files, and copied the piece of code below, 
+        changing the font weight to 800, as in the model
+   */
+   @font-face {
+      font-family: 'Avenir';
+      src: url('https://assets.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce461332a14cfb_Avenir-Heavy.woff2') format('woff2'), url('https://assets.website-files.com/5ed7de2862ce46f8d9a14cd1/5f033e1ec84c423873b0afbd_Avenir-Heavy.eot') format('embedded-opentype'), url('https://assets.website-files.com/5ed7de2862ce46f8d9a14cd1/5f033a48235b2a681c8d4c1b_Avenir-Heavy.woff') format('woff');
+      font-weight: 800;
+      font-style: normal;
+      font-display: auto;
+    }
 
     @font-face {
         font-family: 'Avenir';
@@ -43,14 +57,6 @@ export default createGlobalStyle`
             url(${AvenirMediumSvg}) format('svg');
         font-weight: 500;
         font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'Avenir';
-      src: url('https://assets.website-files.com/5ed7de2862ce46f8d9a14cd1/5ed7de2862ce461332a14cfb_Avenir-Heavy.woff2') format('woff2'), url('https://assets.website-files.com/5ed7de2862ce46f8d9a14cd1/5f033e1ec84c423873b0afbd_Avenir-Heavy.eot') format('embedded-opentype'), url('https://assets.website-files.com/5ed7de2862ce46f8d9a14cd1/5f033a48235b2a681c8d4c1b_Avenir-Heavy.woff') format('woff');
-      font-weight: 800;
-      font-style: normal;
-      font-display: auto;
     }
 
     * {
