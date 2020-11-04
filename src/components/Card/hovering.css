@@ -1,0 +1,75 @@
+#card-body:hover
+.card-options {
+    opacity: 1;
+}
+
+ul {
+    list-style: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+li {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    padding-right: 20px;
+    transition: all .2s;
+}
+
+li:hover {
+    background-color: #B05EFD;
+}
+
+li#delete-item:hover {
+    background-color: #EB5757;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    width: 100%;
+}
+
+a span,
+a img {
+    display: block;
+}
+
+a .icon-wrapper {
+    width: 18px;
+    height: 17px;
+}
+
+.icon-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+a span {
+    margin-left: 17px;
+}
+
+li:hover 
+a {
+    color: white;
+}
+
+li:hover
+#download {
+    filter: invert(1);
+}
+
+li:hover
+#print{
+    filter: grayscale(1) brightness(100);
+}
+
+li:hover
+#delete {
+    filter: grayscale(1) brightness(100);
+}
